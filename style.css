@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+/* body{
+    background: #00000098;
+} */
+/* header style */
+.hd1 {
+  background: #00000098;
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+  padding-left: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.searchBox {
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 30px;
+  align-items: center;
+}
+.searchBox:hover input {
+  width: 400px;
+}
+.searchBox input {
+  width: 0px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+  color: black;
+}
+.social {
+  display: flex;
+  justify-content: flex-end;
+}
+.social button {
+  cursor: pointer;
+}
+.social button:hover {
+  color: white;
+}
+.logoutbtn {
+  color: white;
+}
+.profileimg {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+/* login style */
+.boxLogin {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: transform 0.4s, top 0.4s;
+  z-index: 3;
+  visibility: hidden;
+}
+.open-login {
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+  top: 50%;
+  left: 50%;
+}
+
+.box2 {
+  display: flex;
+  width: 350px;
+  height: 420px;
+  background-color: none;
+  /* backdrop-filter: blur(10px); */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+.crossbtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.signup {
+  display: flex;
+}
+.signup button {
+  border: none;
+  background: transparent;
+  color: blue;
+  border-bottom: 1px solid blue;
+  font-weight: 500;
+}
+
+.register {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.4s, top 0.4s;
+  visibility: hidden;
+}
+.box1 {
+  display: flex;
+  width: 400px;
+  /* height: 420px; */
+  background: rgba(0, 0, 0, 0.3);
+  /* backdrop-filter: blur(10px); */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 0.4s, top 0.4s;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.box1 button {
+  text-align: right;
+  padding-top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.logindiv {
+  display: flex;
+}
+.logindiv button {
+  border: none;
+  background: transparent;
+  color: blue;
+  border-bottom: 1px solid blue;
+  font-weight: 500;
+  padding: 0;
+}
+.box1 input {
+  width: 300px;
+  margin-bottom: 10px;
+}
+.open-register {
+  visibility: visible;
+  z-index: 1;
+}
+
+#btn {
+  width: 70%;
+  height: 50px;
+  border-radius: 40px;
+  border: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  transition: 0.5s;
+}
+
+#btn:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* swipper slide */
+.swiper {
+  width: 100%;
+  height: 50%;
+}
+.swiper-slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.carbox {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding: 30px;
+  box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+}
+.swiper {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+.swiper-slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+}
+.carbox {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+}
+
+.cut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+@media only screen and (max-width: 768px) {
+  .searchBox:hover input {
+    width: 200px;
+  }
+  .social {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .carbox {
+    padding: 15px;
+    margin-top: 15px;
+  }
+  .card {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+  .card-btn {
+    width: 100%;
+  }
+  .banner h1 {
+    left: 20px;
+    bottom: 100px;
+    width: 80%;
+  }
+  .cut img {
+    width: 100%;
+    height: auto;
+  }
+  .navbar-nav {
+    padding: 10px;
+  }
+  .dropdown-menu {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .searchBox:hover input {
+    width: 150px;
+  }
+  .banner h1 {
+    font-size: 24px;
+    bottom: 50px;
+  }
+  .box1,
+  .box2 {
+    width: 90%;
+  }
+  .box1 input {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .swiper-slide {
+    transition: transform 100ms;
+  }
+  .swiper-slide .card {
+    transition: box-shadow 500ms;
+  }
+  .swiper-slide.swiper-slide-active .card {
+    box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
+  }
+}
+.banner {
+  background: url(img/banner.jpg);
+  width: 100%;
+  height: 65vh;
+  background-position: center;
+  display: block;
+}
+.banner h1 {
+  position: absolute;
+  left: 50px;
+  bottom: 200px;
+  width: 500px;
+}
+.upcardetail {
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding: 30px;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+}
+.card-img {
+  height: 180px;
+}
+.card-btn {
+  width: 250px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid orangered;
+  color: orangered;
+  border-radius: 8px;
+}
+.card-btn:hover {
+  background-color: orangered;
+  color: white;
+}
+.expected {
+  font-size: 10px;
+  color: gray;
+}
+.carprice {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.cardate {
+  height: 20px;
+  font-size: 14px;
+}
+/* alert launched car style */
+.alertbox1 {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+}
+.offer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.latbox{
+    width: 80%;
+    border-radius: 14px;
+    padding: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.35);;
+}
